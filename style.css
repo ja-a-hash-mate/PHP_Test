@@ -1,0 +1,17 @@
+
+body {
+  background-color: powderblue;
+
+}
+
+.Importance {
+  background-color: white;
+  border: 40px;
+}
+
+table {
+  background-color: white;
+  color: black;
+  border: 40px;
+  text-align: center;
+}

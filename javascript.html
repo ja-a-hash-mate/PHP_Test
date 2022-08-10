@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>64 JS interger</title>
+</head>
+<body>
+    <h2>JS Lesson - 1</h2>
+    <h3 onclick="changeColor(this, 'red')">Click me to change my text color.</h3>
+    <button type="button" onclick="document.getElementById('time').innerHTML = Date()">Date / Time</button>
+    <br>
+    <br>
+    <button onclick="myFunction()">Click me</button>
+    <br>
+    <br>
+    <button onclick="IntergerLimit()">Big Button</button>
+    <br>
+    <br>
+    <p id="Hello"></p>
+    <p id="time"></p>
+    <!--<p id="demo"></p>-->
+    <p id="Interger"></p>
+    <script>
+        var  x, y, z;  
+        // Declare 3 variables
+        x = 5;    
+        // Assign the value 5 to x
+        y = 6;    
+        // Assign the value 6 to y
+        z = x + y; 
+        // Assign the sum of x and y to z
+        console.log (z);
+        // document.getElementById("demo").innerHTML = z;
+        </script>
+        <script>
+             function myFunction() {
+             document.getElementById("Hello").innerHTML = "Hello World";
+             }
+        </script>
+        <script>
+            function IntergerLimit() {
+                document.getElementById("Interger").innerHTML = "Interger Limit";
+            }
+        </script>
+        <script>
+            function changeColor(element, color) {
+              element.style.color = color;
+            }
+        </script>
+
+        <!-- textbox -->
+        <p>Field1: <input type="text" id="field1" value="Hello World!"></p>
+        <p>Field2: <input type="text" id="field2"></p>
+        <p>Clicking "Copy" triggers a function that copies the text value from Field1 to Field2.</p>
+        <button onclick="copy()">Copy</button>
+        <button onclick="ypoc()">Ypoc</button>
+        <script>
+            function copy() {
+              document.getElementById("field2").value = document.getElementById("field1").value;
+            }
+        </script>
+        <script>
+            function ypoc() {
+              document.getElementById("field1").value = document.getElementById("field2").value;
+            }
+        </script>
+        <p>Click anywhere in this window to change the background color of body.</p>
+        <script>
+            window.onclick = changeBackground;
+            
+            function changeBackground() {
+              document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
+            }
+            </script>
+</body>
+</html>

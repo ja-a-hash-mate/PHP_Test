@@ -7,7 +7,7 @@ class dbconfig {
             $this->db_connect();
     }
     public function db_connect() {
-        $this->connection = mysqli_connect('localhost','root','','the_integer_limits');
+        $this->connection = mysqli_connect('localhost','root','','Signupforums');
     }
 }
 $db = new dbconfig();

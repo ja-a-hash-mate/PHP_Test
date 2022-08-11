@@ -30,10 +30,10 @@
                     <input type="text" name="Last_Name" placeholder="Last Name" class="form-control mb-2">
                     <input type="text" name="Email_Address" placeholder="Email Address" class="form-control mb-2">
                     <input type="text" name="Username" placeholder="Username" class="form-control mb-2">
-                    </form>
                 </div>
                 <div class="card-footer">
-                <button type="button" class="btn btn-success" name="btn_submit">Submit</button>
+                <button class="btn btn-success" name="btn_submit">Submit</button>
+                </form>
                 </div>
             </div>
         </div>

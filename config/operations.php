@@ -5,7 +5,7 @@ class operations extends dbconfig {
     public function Store_Record() {
         global $db;
         var_dump($_POST);
-        if(isset($_POST['btn_save']))
+        if(isset($_POST['btn_submit']))
         {
          $First_Name = $db->check($_POST['First_Name']);
          $Middle_Name = $db->check($_POST['Middle_Name']);
@@ -27,7 +27,7 @@ class operations extends dbconfig {
      function insert_record($a,$b,$c,$d,$e)
      {
          global $db;
-         $query = "insert into database-0002 (First_Name,Middle_Name,Last_Name,Email_Address,Username) values('$a','$b','$c','$d','$e')";
+         $query = "insert into dbn0001 (First_Name,Middle_Name,Last_Name,Email_Address,Username) values('$a','$b','$c','$d','$e')";
          $result = mysqli_query($db->connection,$query);
      
          if($result)
@@ -49,6 +49,12 @@ class operations extends dbconfig {
               unset($_SESSION['Message']);
           }
       }
+      //method "check"
+      public function check($a)
+    {
+        $return = mysqli_real_escape_string($this->connection,$a);
+        return $return;
+    }
 }
 
 ?>

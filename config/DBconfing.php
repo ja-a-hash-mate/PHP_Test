@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once('operations.php');
 class dbconfig {
     public $connection;
